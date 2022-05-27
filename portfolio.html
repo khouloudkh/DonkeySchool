@@ -14,20 +14,22 @@
 <body>
     <header>
         <h1>MON PORTFOLIO</h1>
+        <label for="menu">☰</label>
+        <input type="checkbox" id="menu"> 
+        
+        <nav>
+            <!--menu burger-->  
+            <ul>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Etudes</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <section class="hover-effect">
-            <nav>
-                <!--menu burger-->                	
-                <label>☰</label>
-                <div class="menu">
-                    <a href="#">Projets</a>
-                    <a href="#">Etudes</a>
-                    <a href="#">Articles</a>
-                    <a href="#">Contact</a>
-                </div>
-                <a href="google">
-                    <img src="https://via.placeholder.com/150" alt="home page" />
-                </a>
-            </nav>
+            <a href="google">
+                <img src="https://via.placeholder.com/150" alt="home page" />
+            </a>
         </section>
     </header>
     <main>
@@ -154,17 +156,19 @@
             <!--formulaire de contact-->
             <form action="contact.php">
                 <!--action reçoit l’url vers laquelle sont envoyées les datas-->
-                <!--nom et prenom input-->
-                <label for="nom_et_prenom">Nom et prénom</label>
-                <input id="nom_et_prenom" name="Nom et prénom" type="text">
-                <!--email input-->
-                <label for="mail">Email</label>
-                <input type="email" name="Email" id="mail" placeholder="@ votre email">
-                <!--msg input-->
-                <label for="msg">Message</label>
-                <input type="text" id="msg" name="Message" maxlength="200" placeholder="Votre message">
-                <!--boutton envoyer-->
-                <button type="submit">Envoyer</button>
+                <ul>
+                    <!--nom et prenom input-->
+                    <li></li><label for="nom_et_prenom">Nom et prénom</label>
+                    <li></li><input id="nom_et_prenom" name="Nom et prénom" type="text">
+                    <!--email input-->
+                    <li></li><label for="mail">Email</label>
+                    <li></li><input type="email" name="Email" id="mail" placeholder="@ votre email">
+                    <!--msg input-->
+                    <li></li><label for="msg">Message</label>
+                    <li></li><input type="text" id="msg" name="Message" maxlength="200" placeholder="Votre message">
+                    <!--boutton envoyer-->
+                    <li></li><button type="submit">Envoyer</button>
+                </ul>
             </form>
         </section>
     </main>
