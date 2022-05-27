@@ -6,6 +6,8 @@
 /*Les bordure de ces images sont arrondis à 3 pixels */
 body img {
     border-radius: 3px;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Une de tes images devra être en noir et blanc */
@@ -27,6 +29,10 @@ body img:hover {
 #menu:checked+nav {
     display: block;
 }
+/* enlever les points de la liste*/
+ul {
+    list-style: none;
+}
 
 /* darkmode pour des écrans de 600px de large et lightmode pour les écrans de plus de 600px de large */
 @media (max-width:600px) {
@@ -36,7 +42,12 @@ body img:hover {
     }
     a {
         color: aqua;
+        padding: 10px;
     }
+    #menu:checked+nav  ul li {
+        display: inline-flex;
+    }
+    
 }
 
 @media (min-width:600px) {
@@ -48,6 +59,24 @@ body img:hover {
     }
 }
 
-form ul{
-    display: inline-table;
+form input{
+    display: flex;
+}
+
+footer {
+    margin-left: 25%;
+    width:50%;
+    text-align: center;
+}
+
+header h1{
+    text-align: center;
+}
+
+button {
+    display: flex;
+}
+
+nav img {
+    display: flex;
 }

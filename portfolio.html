@@ -26,11 +26,11 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <section class="hover-effect">
+        <div class="hover-effect">
             <a href="google">
                 <img src="https://via.placeholder.com/150" alt="home page" />
             </a>
-        </section>
+        </div>
     </header>
     <main>
         <section>
@@ -44,7 +44,7 @@
                     eos ipsum quae fugit ipsa eaque ratione magnam amet quisquam
                     laboriosam doloribus possimus corrupti!
                 </p>
-                <button alt="En savoir plus">En savoir plus</button>
+                <button>En savoir plus</button>
             </div>
             <div>
                 <img src="https://via.placeholder.com/150" alt="Projet 2" />
@@ -55,7 +55,7 @@
                     eos ipsum quae fugit ipsa eaque ratione magnam amet quisquam
                     laboriosam doloribus possimus corrupti!
                 </p>
-                <button alt="En savoir plus">En savoir plus</button>
+                <button>En savoir plus</button>
             </div>
             <div>
                 <img src="https://via.placeholder.com/150" alt="Projet 3" />
@@ -66,7 +66,7 @@
                     eos ipsum quae fugit ipsa eaque ratione magnam amet quisquam
                     laboriosam doloribus possimus corrupti!
                 </p>
-                <button alt="En savoir plus">En savoir plus</button>
+                <button>En savoir plus</button>
             </div>
         </section>
         <section>
@@ -156,19 +156,17 @@
             <!--formulaire de contact-->
             <form action="contact.php">
                 <!--action reçoit l’url vers laquelle sont envoyées les datas-->
-                <ul>
-                    <!--nom et prenom input-->
-                    <li></li><label for="nom_et_prenom">Nom et prénom</label>
-                    <li></li><input id="nom_et_prenom" name="Nom et prénom" type="text">
-                    <!--email input-->
-                    <li></li><label for="mail">Email</label>
-                    <li></li><input type="email" name="Email" id="mail" placeholder="@ votre email">
-                    <!--msg input-->
-                    <li></li><label for="msg">Message</label>
-                    <li></li><input type="text" id="msg" name="Message" maxlength="200" placeholder="Votre message">
-                    <!--boutton envoyer-->
-                    <li></li><button type="submit">Envoyer</button>
-                </ul>
+                <!--nom et prenom input-->
+                <label for="nom_et_prenom">Nom et prénom</label><br>
+                <input id="nom_et_prenom" name="Nom et prénom" type="text"><br>
+                <!--email input-->
+                <label for="mail">Email</label><br>
+                <input type="email" name="Email" id="mail" placeholder="@ votre email"><br>
+                <!--msg input-->
+                <label for="msg">Message</label><br>
+                <input type="text" id="msg" name="Message" maxlength="200" placeholder="Votre message"><br>
+                <!--boutton envoyer-->
+                <button type="submit">Envoyer</button><br>
             </form>
         </section>
     </main>
