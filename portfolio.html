@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
 <!--modifier lang="fr"-->
+
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--description-->
     <meta content="mon potfolio: projets, etudes, articles et contact" name="description">
     <title>MON PORTFOLIO</title>
-    <!-- 
-    pas de css challenge 1
     <link rel="stylesheet" href="style.css">
-  -->
 </head>
+
 <body>
     <header>
         <h1>MON PORTFOLIO</h1>
+        <label for="menu">☰</label>
+        <input type="checkbox" id="menu"> 
+        
         <nav>
-            <!--menu burger-->
+            <!--menu burger-->  
             <ul>
-                <li>
-                    <a href="Projets">Projets</a>
-                </li>
-                <li>
-                    <a href="Etudes">Etudes</a>
-                </li>
-                <li>
-                    <a href="Articles">Articles</a>
-                </li>
-                <li>
-                    <a href="Contact">Contact</a>
-                </li>
-                <li>
-                    <a href="google">
-                        <img src="https://via.placeholder.com/150" alt="home page" />
-                    </a>
-                </li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Etudes</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <section class="hover-effect">
+            <a href="google">
+                <img src="https://via.placeholder.com/150" alt="home page" />
+            </a>
+        </section>
     </header>
     <main>
         <section>
@@ -161,17 +156,19 @@
             <!--formulaire de contact-->
             <form action="contact.php">
                 <!--action reçoit l’url vers laquelle sont envoyées les datas-->
-                <!--nom et prenom input-->
-                <label for="nom_et_prenom">Nom et prénom</label>
-                <input id="nom_et_prenom" name="Nom et prénom" type="text">
-                <!--email input-->
-                <label for="mail">Email</label>
-                <input type="email" name="Email" id="mail" placeholder="@ votre email">
-                <!--msg input-->
-                <label for="msg">Message</label>
-                <input type="text" id="msg" name="Message" maxlength="200" placeholder="Votre message">
-                <!--boutton envoyer-->
-                <button type="submit">Envoyer</button>
+                <ul>
+                    <!--nom et prenom input-->
+                    <li></li><label for="nom_et_prenom">Nom et prénom</label>
+                    <li></li><input id="nom_et_prenom" name="Nom et prénom" type="text">
+                    <!--email input-->
+                    <li></li><label for="mail">Email</label>
+                    <li></li><input type="email" name="Email" id="mail" placeholder="@ votre email">
+                    <!--msg input-->
+                    <li></li><label for="msg">Message</label>
+                    <li></li><input type="text" id="msg" name="Message" maxlength="200" placeholder="Votre message">
+                    <!--boutton envoyer-->
+                    <li></li><button type="submit">Envoyer</button>
+                </ul>
             </form>
         </section>
     </main>
@@ -179,4 +176,5 @@
         <p>monportfolio.com</p>
     </footer>
 </body>
+
 </html>
